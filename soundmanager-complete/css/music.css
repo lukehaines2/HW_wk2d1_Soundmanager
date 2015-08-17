@@ -1,0 +1,30 @@
+body {
+  font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  background: red;
+}
+
+.inner {
+  max-width: 850px;
+  margin: 0 auto;
+  margin-top: 95px;
+  border-color: red;
+}
+
+.boxes {
+  display: inline-block;
+  max-width: 850px;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  font-size: 400%;
+  text-align: center;
+}
+
+p a {
+  text-decoration: none;
+}
