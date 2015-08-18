@@ -4,7 +4,7 @@ window.onload = function (){
   clickPlay.addEventListener('click', playSound);
 }
 debugger;
-//array of phrases
+//array of snippets for ref in playSound
 var snippets = ['sounds/smell.mp3','sounds/forreal.mp3', 'sounds/bigup.mp3', 'sounds/love.mp3', 'sounds/checkdis.mp3', 'sounds/kfc.mp3', 'sounds/wicked.mp3', 'sounds/respect.mp3', 'sounds/smoke.mp3'];
 
 
@@ -24,6 +24,7 @@ soundManager.setup({
   onready: function() {
   }
 });
+// Play a random snippet
 function playSound(){
   var snippets = mp3s[Math.floor(Math.random() * snippets.length)];  
   var mySound = soundManager.createSound({
@@ -47,7 +48,7 @@ function playSound(){
 
 // ( './sounds'+  +'.mp3')
 
-
+//SO CONFUSED! This is just me trying to get the very basic click and play function working again. which it isnt :(
 box1.addEventListener('click', function() {
   mySound = soundManager.createSound({
     id: 'wicked',
