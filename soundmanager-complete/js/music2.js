@@ -20,7 +20,7 @@ myPlayer.playClickHandler = function(e) {
 myPlayer.play = function() {
   var sound = this.getSound()
 
-  this.playButton.innerHTML = '&#10074;&#10074;'
+  this.playButton = 
 
   if(this.playButton.getAttribute('data-state') === 'stopped') {
     // this.currentSound.play({onfinish: this.clearSound.bind(this)});
@@ -62,3 +62,9 @@ soundManager.setup({
   }
 });
 
+function changeImage(element) {
+         var right = "./images/alig.jpg";
+         var left = "./images/alig2.jpg";
+         element.src = element.bln ? right : left;
+         element.bln = !element.bln;
+     }
